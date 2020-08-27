@@ -31,7 +31,7 @@ namespace HoneywellHackathon.Repository
 
         public DeviceAndFilterRepository()
         {
-            
+
         }
 
         public IEnumerable<Device> GetAllDeviceData()
@@ -67,10 +67,14 @@ namespace HoneywellHackathon.Repository
             DeviceList[index].Filter = filter;
         }
 
-        public string GetDeviceDataById(int deviceId)
+        public Device GetDeviceById(int deviceId)
         {
-            var data = this.GetAllDeviceData().FirstOrDefault(a => a.Id == deviceId).Data;
-            return data;
+            return this.GetAllDeviceData().FirstOrDefault(a => a.Id == deviceId);
+        }
+
+        public Filter GetFilterById(int filterId)
+        {
+           return FilterList.FirstOrDefault(a => a.Id == filterId);
         }
 
     }

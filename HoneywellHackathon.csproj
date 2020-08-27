@@ -172,6 +172,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DeviceAndFilterRepository.cs" />
     <Compile Include="Repository\IDeviceAndFilterRepository.cs" />
+    <Compile Include="Service\IIoTAppService.cs" />
+    <Compile Include="Service\IoTAppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

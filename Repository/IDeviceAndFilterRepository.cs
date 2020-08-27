@@ -13,6 +13,7 @@ namespace HoneywellHackathon.Repository
         void AddDeviceData(DeviceData deviceData);
         void AddFilter(Filter filter);
         void ApplyFilterOnDevice(Device device, Filter filter);
-        string GetDeviceDataById(int deviceId);
+        Device GetDeviceById(int deviceId);
+        Filter GetFilterById(int filterId);
     }
 }
