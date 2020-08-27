@@ -60,7 +60,7 @@ namespace HoneywellHackathon.Service
         public string GetDataByDevice(int deviceId)
         {
             var device = this._deviceFilterRepo.GetDeviceById(deviceId);
-            return device.Data
+            return device.Data;
         }
     }
 }
